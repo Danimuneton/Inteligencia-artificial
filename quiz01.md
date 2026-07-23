@@ -49,3 +49,13 @@ Justificacion: Las reglas del proceso son conocidas y definidas por el diseño d
 ## 5. ¿Qué tipo de programa de agente creen que es?
 
 Agente basado en objetivos: El agente tiene un objetivo explícito en cada generación el cual es producir un video que coincida con el prompt y coherente con la imagen de entrada. Evalúa en en cada paso que tan cerca está el resultado parcial de ese objetivo y ajusta su salida.
+
+# Reto adicional
+
+1.  **Totalmente observable, determinista y episódico.**
+
+   NLLB Translator: Puede clasificarse como totalmente observable, determinista y episódico porque cada traduccion depende unicamente del texto de entrada visible, sin necesidad de inferir informacion, dado el mismo texto produce la misma salida y cada solicitud es un evento aislado
+
+2.  **Parcialmente observable, estocástico y secuencial.**
+
+   Chatbot conversacional: puede clasificarse como Parcialmente observable, estocástico y secuencial porque el modelo solo accede al texto escrito por el usuario sin conocer su intencion real ni el contexto externo, la misma pregunta puede generar respuestas distintas en cada ejecucion, y cada respuesta depende del historial de la conversacion
